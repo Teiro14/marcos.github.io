@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Currículum de Marcos, estudiante de Desarrollo de Aplicaciones Web en Ourense.">
+  <title>Marcos · Currículum</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="prompt">~/</span>marcos</a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html" class="active">Inicio</a>
+      <a href="formacion.html">Formación</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+      <button class="theme-toggle" aria-label="Cambiar tema">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="mono kicker">$ whoami</p>
+      <h1>Marcos <span class="accent">Santeiro</span></h1>
+      <p class="typed mono" data-words="Desarrollador web en formación|Estudiante de 2º de DAW|Homelaber con Proxmox y Synology"></p>
+      <p class="lead">
+        Estudiante de 2º de <strong>Desarrollo de Aplicaciones Web</strong> en Ourense.
+        Me gusta construir herramientas que resuelven problemas reales: desde webs
+        y guías de estilo hasta scripts que automatizan mi propio servidor.
+      </p>
+      <div class="hero-actions">
+        <a class="btn" href="proyectos.html">Ver proyectos</a>
+        <a class="btn btn-ghost" href="contacto.html">Contactar</a>
+      </div>
+    </section>
+
+    <section class="card-grid three">
+      <article class="card">
+        <h2 class="mono">📍 Ubicación</h2>
+        <p>Ourense, Galicia</p>
+      </article>
+      <article class="card">
+        <h2 class="mono">🎓 Estudios</h2>
+        <p>CFGS Desarrollo de Aplicaciones Web (en curso)</p>
+      </article>
+      <article class="card">
+        <h2 class="mono">🗣️ Idiomas</h2>
+        <p>Castellano y gallego (nativo)</p>
+      </article>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="mono">01.</span> Habilidades</h2>
+      <div class="skills">
+        <div class="skill-group">
+          <h3>Desarrollo web</h3>
+          <ul class="tags">
+            <li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li><li>Diseño responsive</li><li>Figma</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Programación</h3>
+          <ul class="tags">
+            <li>Java</li><li>Python</li><li>Git y GitHub</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Sistemas y redes</h3>
+          <ul class="tags">
+            <li>Proxmox</li><li>Synology NAS</li><li>Servicios de red</li><li>FTP</li><li>Hosting y dominios</li><li>Self-hosting</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="mono">02.</span> Fuera del teclado</h2>
+      <div class="card-grid three">
+        <article class="card"><h3>🎵 Música</h3></article>
+        <article class="card"><h3>🎮 Videojuegos</h3></article>
+        <article class="card"><h3>🏠 Domótica</h3></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span class="year"></span> Marcos · Hecho a mano con HTML, CSS y JavaScript · Publicado en GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

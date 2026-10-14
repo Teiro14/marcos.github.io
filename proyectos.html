@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Proyectos · Marcos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="prompt">~/</span>marcos</a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Inicio</a>
+      <a href="formacion.html">Formación</a>
+      <a href="proyectos.html" class="active">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+      <button class="theme-toggle" aria-label="Cambiar tema">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p class="mono kicker">$ ls proyectos/</p>
+      <h1>Proyectos</h1>
+      <p class="lead">Cosas que he construido en clase y por mi cuenta. Filtra por categoría:</p>
+
+      <div class="filters" role="group" aria-label="Filtrar proyectos">
+        <button class="filter active" data-filter="todos">Todos</button>
+        <button class="filter" data-filter="web">Web</button>
+        <button class="filter" data-filter="diseno">Diseño</button>
+        <button class="filter" data-filter="sistemas">Sistemas</button>
+      </div>
+
+      <div class="card-grid two projects">
+        <article class="card project" data-cat="web">
+          <span class="badge">Web</span>
+          <h3>Web personal</h3>
+          <p>Mi web personal, con fuentes tipográficas personalizadas inspiradas en el estilo de los videojuegos y el anime que me gustan.</p>
+          <ul class="tags small"><li>HTML</li><li>CSS</li><li>@font-face</li></ul>
+        </article>
+
+        <article class="card project" data-cat="diseno">
+          <span class="badge">Diseño</span>
+          <h3>Guía de estilos · SorprendeT</h3>
+          <p>Guía de estilos para una web de regalos: paleta de colores, tipografía, fotografía, logotipos, iconografía y estructura de páginas.</p>
+          <ul class="tags small"><li>Figma</li><li>Diseño de interfaces</li></ul>
+        </article>
+
+        <article class="card project" data-cat="web">
+          <span class="badge">Web</span>
+          <h3>Apuntes offline</h3>
+          <p>Copia local de un portal de apuntes de clase, con un botón para actualizar el contenido y poder consultarlo sin conexión.</p>
+          <ul class="tags small"><li>JavaScript</li><li>Automatización</li></ul>
+        </article>
+
+        <article class="card project" data-cat="sistemas">
+          <span class="badge">Sistemas</span>
+          <h3>Homelab</h3>
+          <p>Servidor Proxmox y NAS Synology DS920+ con servicios autoalojados y un panel de control propio.</p>
+          <ul class="tags small"><li>Proxmox</li><li>Docker</li><li>Synology</li></ul>
+        </article>
+
+        <article class="card project" data-cat="sistemas">
+          <span class="badge">Sistemas</span>
+          <h3>Migración y organización del NAS</h3>
+          <p>Scripts en Python para migrar y ordenar automáticamente miles de archivos del NAS sin cortar el servicio.</p>
+          <ul class="tags small"><li>Python</li><li>Scripting</li></ul>
+        </article>
+
+        <article class="card project" data-cat="web">
+          <span class="badge">Web</span>
+          <h3>Despliegue en hosting propio</h3>
+          <p>Publicación de webs por FTP en hosting compartido y gestión de dominios propios (DNS, subdominios).</p>
+          <ul class="tags small"><li>FTP</li><li>DNS</li><li>Hosting</li></ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span class="year"></span> Marcos · Hecho a mano con HTML, CSS y JavaScript · Publicado en GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formación · Marcos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="prompt">~/</span>marcos</a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Inicio</a>
+      <a href="formacion.html" class="active">Formación</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html">Contacto</a>
+      <button class="theme-toggle" aria-label="Cambiar tema">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <p class="mono kicker">$ cat formacion.txt</p>
+      <h1>Formación</h1>
+
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date mono"><!-- EDITAR -->[Año inicio] – actualidad</span>
+          <h3>CFGS Desarrollo de Aplicaciones Web (DAW)</h3>
+          <p class="muted"><!-- EDITAR: nombre del centro -->[Nombre del centro], Ourense</p>
+          <p>Actualmente en 2º curso. Módulos de programación en Java, servicios de red,
+             desarrollo web en entorno cliente y servidor (JavaScript y PHP) y diseño de interfaces.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date mono"><!-- EDITAR -->[Años]</span>
+          <h3><!-- EDITAR -->[Estudios anteriores: Bachillerato, ESO, otro ciclo...]</h3>
+          <p class="muted">[Centro], [Localidad]</p>
+        </li>
+      </ol>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="mono">01.</span> Idiomas</h2>
+      <div class="lang-list">
+        <div class="lang">
+          <span>Castellano</span>
+          <div class="bar"><div class="fill" data-level="100"></div></div>
+          <span class="mono muted">Nativo</span>
+        </div>
+        <div class="lang">
+          <span>Gallego</span>
+          <div class="bar"><div class="fill" data-level="100"></div></div>
+          <span class="mono muted">Nativo</span>
+        </div>
+        <div class="lang">
+          <span>Inglés</span>
+          <div class="bar"><div class="fill" data-level="50"></div></div>
+          <span class="mono muted"><!-- EDITAR -->[Nivel]</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span class="mono">02.</span> Aprendiendo por mi cuenta</h2>
+      <div class="card-grid two">
+        <article class="card">
+          <h3>PHP en castellano</h3>
+          <p>Curso paralelo al de clase para afianzar PHP desde cero.</p>
+        </article>
+        <article class="card">
+          <h3>Homelab</h3>
+          <p>Administración de un servidor Proxmox y un NAS Synology DS920+ en casa:
+             virtualización, almacenamiento y servicios autoalojados.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span class="year"></span> Marcos · Hecho a mano con HTML, CSS y JavaScript · Publicado en GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

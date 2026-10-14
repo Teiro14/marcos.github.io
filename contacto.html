@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto · Marcos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html"><span class="prompt">~/</span>marcos</a>
+    <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <a href="index.html">Inicio</a>
+      <a href="formacion.html">Formación</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="contacto.html" class="active">Contacto</a>
+      <button class="theme-toggle" aria-label="Cambiar tema">◐</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <div>
+        <p class="mono kicker">$ ping marcos</p>
+        <h1>Contacto</h1>
+        <p class="lead">¿Prácticas, un proyecto o una duda? Escríbeme.</p>
+        <ul class="contact-links">
+          <!-- EDITAR: pon tu correo y tu usuario de GitHub -->
+          <li><span class="mono">email</span> <a id="email-link" href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a></li>
+          <li><span class="mono">github</span> <a href="https://github.com/TU-USUARIO" target="_blank" rel="noopener">github.com/TU-USUARIO</a></li>
+          <li><span class="mono">ubicación</span> Ourense, Galicia</li>
+        </ul>
+      </div>
+
+      <form id="contact-form" class="card" novalidate>
+        <label for="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" required>
+        <small class="error" data-for="nombre"></small>
+
+        <label for="correo">Correo</label>
+        <input id="correo" name="correo" type="email" required>
+        <small class="error" data-for="correo"></small>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+        <small class="error" data-for="mensaje"></small>
+
+        <button type="submit" class="btn">Enviar</button>
+        <p class="form-note muted">Se abrirá tu programa de correo con el mensaje ya escrito.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span class="year"></span> Marcos · Hecho a mano con HTML, CSS y JavaScript · Publicado en GitHub Pages</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
